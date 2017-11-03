@@ -1,0 +1,48 @@
+
+
+20171025-17:51
+
+THEMIS_APP1
+
+
+diskused
+Use% Mounted
+54% /
+1% /dev/shm
+
+memused
+74.8401
+
+iostat
+Device: MB_read/s MB_wrtn/s
+sda 0.01 0.06
+
+cpustat
+load average: 0.97, 0.82, 0.74
+
+
+zabbix
+
+
+diskused
+Use% Mounted
+32% /
+0% /dev
+1% /dev/shm
+3% /run
+0% /sys/fs/cgroup
+20% /var
+1% /home
+42% /boot
+1% /run/user/42
+0% /run/user/0
+
+memused
+49.5378
+
+iostat
+Device: MB_read/s MB_wrtn/s
+sda 0.00 0.11
+
+cpustat
+load average: 0.10, 0.12, 0.13

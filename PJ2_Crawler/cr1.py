@@ -13,11 +13,12 @@ def get_title(url):
         return e
     try:
         bs1 = BeautifulSoup(html.read(), 'html.parser')
-        title1 = bs1.title
+        title1 = bs1.find('table', {'id': 'giftList'}).children
     except AttributeError as e:
         return e
     return title1
 
 
-mytitle = get_title('http://blog.csdn.net/cangchen/article/details/45673223')
-print mytitle
+mytitle = get_title('http://www.pythonscraping.com/pages/page3.html')
+for name in mytitle:
+    print name
