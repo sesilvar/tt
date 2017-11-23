@@ -1,48 +1,373 @@
 
 
-20171025-17:51
+20171113-09:30
 
 THEMIS_APP1
 
 
 diskused
 Use% Mounted
-54% /
-1% /dev/shm
+28% /
+0% /dev/shm
 
 memused
-74.8401
+             total       used       free     shared    buffers     cached
+Mem:          7869       6909        960          0        157       5116
 
 iostat
 Device: MB_read/s MB_wrtn/s
-sda 0.01 0.06
+xvda 0.00 0.01
 
 cpustat
-load average: 0.97, 0.82, 0.74
+load average: 0.09, 0.05, 0.05
 
 
-zabbix
+THEMIS_MW
 
 
 diskused
 Use% Mounted
-32% /
-0% /dev
-1% /dev/shm
-3% /run
-0% /sys/fs/cgroup
-20% /var
-1% /home
-42% /boot
-1% /run/user/42
-0% /run/user/0
+15% /
+0% /dev/shm
 
 memused
-49.5378
+             total       used       free     shared    buffers     cached
+Mem:          7869       5342       2527          0        168       2204
 
 iostat
 Device: MB_read/s MB_wrtn/s
-sda 0.00 0.11
+xvda 0.00 0.02
 
 cpustat
-load average: 0.10, 0.12, 0.13
+load average: 0.09, 0.07, 0.05
+
+
+FACTORY-SERVICE1
+
+
+diskused
+Use% Mounted
+60% /
+0% /dev/shm
+
+memused
+             total       used       free     shared    buffers     cached
+Mem:          3829       3793         35          0        104       2799
+
+iostat
+Device: MB_read/s MB_wrtn/s
+xvda 0.00 0.05
+
+cpustat
+load average: 0.07, 0.27, 0.30
+
+
+FACTORY-WEB1
+
+
+diskused
+Use% Mounted
+31% /
+0% /dev/shm
+
+memused
+             total       used       free     shared    buffers     cached
+Mem:          3829       3744         84          0        162       2367
+
+iostat
+Device: MB_read/s MB_wrtn/s
+xvda 0.00 0.01
+
+cpustat
+load average: 0.24, 0.31, 0.27
+
+
+hades-web
+
+
+diskused
+Use% Mounted
+21% /
+0% /dev/shm
+
+memused
+             total       used       free     shared    buffers     cached
+Mem:          3829       3547        282          0        168       2631
+
+iostat
+Device: MB_read/s MB_wrtn/s
+xvda 0.00 0.01
+
+cpustat
+users, load average: 0.03, 0.03,
+
+
+hades-service
+
+
+diskused
+Use% Mounted
+16% /
+0% /dev/shm
+
+memused
+             total       used       free     shared    buffers     cached
+Mem:          3829       3208        621          0        155       2243
+
+iostat
+Device: MB_read/s MB_wrtn/s
+xvda 0.00 0.00
+
+cpustat
+load average: 0.05, 0.04, 0.05
+
+
+oa-db
+
+
+diskused
+Use% Mounted
+91% /
+0% /dev
+53% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/0
+19% /home/oracle/app/oracle/product/11.2.0/dbhome_1/dbs/unknow_tablespace
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790         520         183         988        3086        2011
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.01 0.03
+
+cpustat
+load average: 0.00, 0.02, 0.05
+
+
+oa-web
+
+
+diskused
+Use% Mounted
+42% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790        3231         159           0         400         304
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.01 0.01
+
+cpustat
+load average: 0.05, 0.06, 0.05
+
+
+nc-db
+
+
+diskused
+Use% Mounted
+43% /
+0% /dev
+53% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+9% /vdb1
+0% /run/user/1001
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790         406         110         988        3274        2142
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.01 0.04
+
+cpustat
+users, load average: 0.00, 0.01,
+
+
+nc-web
+
+
+diskused
+Use% Mounted
+47% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790        2486         147           0        1157        1040
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.01 0.03
+
+cpustat
+load average: 0.01, 0.04, 0.05
+
+
+finebi
+
+
+diskused
+Use% Mounted
+29% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:          15886        3439        3730           0        8716       12100
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.00 0.01
+
+cpustat
+load average: 0.00, 0.01, 0.05
+
+
+finereport
+
+
+diskused
+Use% Mounted
+68% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:          15886        7865         676           0        7345        7680
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.06 0.07
+
+cpustat
+load average: 0.00, 0.01, 0.05
+
+
+bss_web
+
+
+diskused
+Use% Mounted
+22% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790        1201         390           0        2198        2330
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.06 0.47
+
+cpustat
+load average: 0.00, 0.04, 0.12
+
+
+amp_back_web
+
+
+diskused
+Use% Mounted
+6% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790         584        1798           0        1407        2951
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.00 0.00
+
+cpustat
+load average: 0.00, 0.01, 0.05
+
+
+amp_back_service
+
+
+diskused
+Use% Mounted
+5% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/1000
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790         558        1389           0        1843        2971
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.00 0.00
+
+cpustat
+load average: 0.00, 0.01, 0.05
+
+
+amp_front_web
+
+
+diskused
+Use% Mounted
+12% /
+0% /dev
+0% /dev/shm
+1% /run
+0% /sys/fs/cgroup
+0% /run/user/0
+
+memused
+              total        used        free      shared  buff/cache   available
+Mem:           3790         137         216           0        3437        3358
+
+iostat
+Device: MB_read/s MB_wrtn/s
+vda 0.00 0.00
+
+cpustat
+load average: 0.00, 0.01, 0.05

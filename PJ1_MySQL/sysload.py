@@ -7,9 +7,9 @@ from loadconf import hostname
 
 
 def sysload(hname):
-    hostload = {'cpustat': "uptime|awk '{print $8,$9,$10,$11,$12}'",
-                'iostat': "iostat -d -m|sed -n '3,4p'|awk '{print $1,$3,$4}'",
-                'memused': "free -m|grep -i 'mem'|sed -n '1,2p'",
+    hostload = {'cpustat': "uptime|awk '{print $NF}'",
+                'iostat': "iostat -d -m|sed -n '4p'|awk '{print "read:"$3,"write:"$4}'",
+                'memused': "free -m|sed -n '1,2p'",
                 'diskused': "df -h|awk '{print $5,$6}'"}
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -22,7 +22,7 @@ def sysload(hname):
 
 
 tt = datetime.datetime.now().strftime('%Y%m%d-%H:%M')
-flog = open('yunstat.txt', 'w')
+flog = open('yunstat.txt', 'wb')
 flog.write('\n\n'+tt)
 for j in hostname:
     hstname, hstload = sysload(j)

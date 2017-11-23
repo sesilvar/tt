@@ -4,7 +4,7 @@
 
 from module import performance
 
-soso = ['soso', ('t_inter', 't_module','holder1','holder2','holder3')]
+soso = ['soso', ('t_inter', 't_module', 'holder1', 'holder2', 'holder3')]
 params = ('thread', 'questions')
 
 
@@ -20,8 +20,6 @@ def getdata(usedb):
 
     print result_data
     print result_status
-
-#def send
 
 
 if __name__ == '__main__':
