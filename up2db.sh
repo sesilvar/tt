@@ -9,17 +9,17 @@ echo 'disk_free:' $disk_free
 time_now=`date '+%Y-%m-%d %H:%M:%S'`
 echo 'time_now:' $time_now
 
-sql="insert into tt.up(cpu_load5,mem_free,disk_free,collect_time) value($cpu_load5, $mem_free, $disk_free, '$time_now');"
+sql="insert into tt.upload(cpu_load5,mem_free,disk_free,collect_time) value($cpu_load5, $mem_free, $disk_free, '$time_now');"
 echo $sql
 
 mysql -uroot -ppasswd -e "$sql"
 
 
-CREATE TABLE `up` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `upload` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `cpu_load5` decimal(5,2) DEFAULT NULL,
-  `mem_free` bigint(20) DEFAULT NULL,
-  `disk_free` bigint(20) DEFAULT NULL,
+  `mem_free` int(20) unsigned DEFAULT NULL,
+  `disk_free` int(20) unsigned DEFAULT NULL,
   `collect_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
   );
